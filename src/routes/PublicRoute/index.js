@@ -8,7 +8,7 @@ const PublicRoute =  ({component}) =>  {
     useEffect(() => {
         const token = localStorage.getItem('token')
         if (token) {
-            navigate('/login');
+            navigate('/huyduocphamm-users');
         }
     }, []);
 
@@ -18,4 +18,3 @@ const PublicRoute =  ({component}) =>  {
 }
 
 export default PublicRoute;
-//Kiểm tra xem người dùng có đăng nhập chưa, nếu rồi  sẽ chuyển về trang này: navigare('/dashboard')

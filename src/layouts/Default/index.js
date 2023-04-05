@@ -11,14 +11,14 @@ const DefaultLayout = ({ children }) => {
             <Layout>
                 <Sidebar>
                     <Logo>Green Academy</Logo>
-                    <Link to='/students'>
+                    <Link to='/huyduocphamm-users'>
                         <MenuItem>
-                            <BorderLeftOutlined />Dashboard
+                            <UserOutlined />Users
                         </MenuItem>
                     </Link>
-                    <Link to='/dashboard'>
+                    <Link to='/huyduocphamm-products'>
                         <MenuItem>
-                            <UserOutlined />Students
+                            <BorderLeftOutlined />Products
                         </MenuItem>
                     </Link>
                 </Sidebar>
