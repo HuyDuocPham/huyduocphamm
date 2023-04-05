@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Layout = styled.div`
     display: grid;
     grid-template-columns: 17.5rem 1fr;
-    `
+    
+   `
 export const Header = styled.header`
     display: flex;
     justify-content: flex-end;
@@ -25,7 +26,7 @@ export const Main = styled.main`
     padding: 1rem;
     overflow: auto;
 `
-export const  Sidebar = styled.div`
+export const Sidebar = styled.div`
     min-height: calc(100vn - 9.25rem);
     background-color: #3498db;
         a {

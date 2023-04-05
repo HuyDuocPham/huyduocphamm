@@ -1,7 +1,11 @@
 import React from "react";
 import { Button, Table } from "antd";
 import { Actions, Image } from "./styles";
+import { useLocation, useNavigate } from "react-router-dom";
+
 const TableUsers = (props) => {
+    const location = useLocation();
+    const navigate = useNavigate();
     const columns = [
         {
             title: "Name",
@@ -58,12 +62,17 @@ const TableUsers = (props) => {
     ];
 
     return (
-        <div>
-            <Table
-                dataSource={props.dataSource}
-                loading={props.loading}
-                columns={columns} />
-        </div>
+        <Table
+            dataSource={props.dataSource}
+            loading={props.loading}
+            columns={columns}
+            onChange={(panination => {
+                const searchParams = new URLSearchParams(location.search)
+                searchParams.set("page", panination.current)
+                searchParams.set("limit", panination.pageSize)
+                navigate(`${location.pathname}?${searchParams.toString()}`)
+            })}
+        />
     )
 };
 export default TableUsers;

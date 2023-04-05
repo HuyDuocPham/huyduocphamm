@@ -1,8 +1,9 @@
 import React from "react";
-import { BorderLeftOutlined, UserOutlined } from "@ant-design/icons"
+import { BorderLeftOutlined, UserOutlined, HeartOutlined } from "@ant-design/icons"
 import { Link } from "react-router-dom";
 import { Footer, Header, Main, Sidebar, Content, Logo, Layout, MenuItem } from "./styles";
 import AuthUser from "./AuthUser";
+
 
 const DefaultLayout = ({ children }) => {
 
@@ -30,7 +31,8 @@ const DefaultLayout = ({ children }) => {
                         {children}
                     </Main>
                     <Footer>
-                        Footer
+                        <p>Made with <HeartOutlined /> by Huy Duoc Pham </p>
+                        <p>Email: huyduocphamm@gmail.com</p>
                     </Footer>
                 </Content>
             </Layout>
