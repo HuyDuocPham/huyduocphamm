@@ -8,7 +8,6 @@ import AuthUser from "./AuthUser";
 const DefaultLayout = ({ children }) => {
 
     return (
-        <div>
             <Layout>
                 <Sidebar>
                     <Logo>Green Academy</Logo>
@@ -36,7 +35,6 @@ const DefaultLayout = ({ children }) => {
                     </Footer>
                 </Content>
             </Layout>
-        </div>
     )
 }
 

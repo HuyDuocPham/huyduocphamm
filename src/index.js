@@ -8,20 +8,25 @@ import PageUsers from './pages/PageUsers'
 import PageProducts from './pages/PageProducts'
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
+import Landingpage from './components/Landingpage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <PublicRoute component={<PageLogIn />} />
+    path:"/",
+    element: <PublicRoute component={<Landingpage />} />
   },
-  {
-    path: "/huyduocphamm-users",
-    element: <PrivateRoute component={<PageUsers />} />
-  },
-  {
-    path: "/huyduocphamm-products",
-    element: <PrivateRoute component={<PageProducts />} />
-  }
+  // {
+  //   path: "/admin/",
+  //   element: <PublicRoute component={<PageLogIn />} />
+  // },
+  // {
+  //   path: "/admin/huyduocphamm-users",
+  //   element: <PrivateRoute component={<PageUsers />} />
+  // },
+  // {
+  //   path: "/admin/huyduocphamm-products",
+  //   element: <PrivateRoute component={<PageProducts />} />
+  // }
 
 ]);
 

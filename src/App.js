@@ -1,14 +1,11 @@
 import './App.css';
 import React from 'react';
 import 'antd/dist/reset.css'
-import Users from './components/Users';
-import Products from './components/Products'
-import FormLogIn from './components/FormLogIn'
-
+import Landingpage from './components/landingpage';
 
 const App = () => {
   return (
-    <FormLogIn />
+    <Landingpage />
   );
 }
 
